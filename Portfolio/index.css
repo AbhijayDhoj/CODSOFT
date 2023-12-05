@@ -1,0 +1,880 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Inter:wght@400;500;800&family=Overpass:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Inter:wght@400;500;800&family=Overpass:wght@400;700&family=Roboto:wght@400;700&family=Signika+Negative:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Imprima&family=Inter:wght@400;500;800&family=Overpass:wght@400;700&family=Roboto:wght@400;700&family=Signika+Negative:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Imprima&family=Inter:wght@400;500;800&family=Overpass:wght@400;700&family=Roboto+Mono:ital,wght@1,100;1,500&family=Roboto:wght@400;700&family=Signika+Negative:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Imprima&family=Inter:wght@400;500;800&family=Overpass:wght@400;700&family=Roboto+Mono:ital,wght@1,100&family=Roboto:wght@400;700&family=Signika+Negative:wght@500&display=swap');
+/* html {
+    scroll-snap-type: y mandatory;
+} */
+body {
+    font-family: "Inter", serif;
+    background-color: #331D2C ;
+    /* width: 100%; */
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation bar starts */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #bda487;
+    /* width: 100%; */
+    height: 80px;
+    padding: 0px 30px;
+}
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.icon{
+    display: none;
+}
+
+.icon img{
+    width: 20px;
+
+}
+.desktopmenu{
+    list-style: none;
+    display: flex;
+}
+
+.desktopmenu a{
+   text-decoration: none;
+   color: black;  
+}
+
+.desktopmenu li{
+    transition: 0.6s;
+}
+
+.desktopmenu li:hover{
+   text-decoration: none;
+   color: black;  
+   transform: scale(1.1);
+}
+/* Navigation bar css ends */
+
+.name {
+    /* border: 2px white solid; */
+    height: 600px;
+    color: #a99176;
+    width: 80%;
+    height: 200px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 12%;
+    margin-bottom: 50px;
+    justify-content: center;
+    /* display: flex; */
+}
+
+.subName {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.name h1 {
+    font-size: 55px; 
+}
+.name button {
+    padding: 15px 70px;
+    font-size: 15px;
+    background-color: #a99176;
+    margin-top: 50px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.name button:hover {
+    padding: 17px 75px;
+    font-size: 20px;
+    background-color: #3F2E3E;
+    color: #a99176;
+    margin-top: 50px;
+    cursor: pointer;
+    border-color: #a99176;
+}
+
+/* About me section */
+.about {
+    width: 60%;
+    background-color: #331D2C;
+    display: block;
+    margin: auto;
+    padding: 50px 50px;
+    height: 400px;
+    margin-top: 260px;
+    margin-bottom: 340px; 
+    background-color: #a99176;
+}
+.about h1 {
+    font-size: 50px;
+    font-family: "Signika Negative" ;
+    /* text-align: center; */
+    /* margin-top: 15px; */
+    padding-bottom: 0px;
+    margin: 0px;
+}
+.about p {
+    font-size: 20px;
+    font-family: "Signika Negative", serif ;
+    /* text-align: center; */
+    justify-content: center;
+    margin-top: 0px;
+    line-height: 30px;
+    margin-right: 20px;
+    /* font-family: "Inter", serif; */
+}
+
+.about .flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 100px;
+    margin-top: 20px;
+
+}
+
+.about .flex img {
+    height: 300px;
+}
+
+/* Myprojects section */
+.skills {
+    width: 800px;
+    background-color: #331D2C;
+    display: block;
+    margin: auto;
+    padding: 40px 50px;
+    height: 100%;
+    margin-top: 200px;
+    margin-bottom: 340px; 
+    background-color: #a99176;
+    /* text-align: center; */
+}
+.skills h1 {
+    font-size: 50px;
+    font-family: "Signika Negative" ;
+    /* text-align: center; */
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.skilllogo {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    width: 70%;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    align-items: center;
+}
+.skills .skilllogo img{
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.logo{
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo h3 {
+    width: 300%;
+}
+
+/* @media (max-width: 425px) {
+    body{
+        background-color: #ce6caf
+        ;
+    }
+    .desktopmenu {
+        display: none;
+    }
+
+} */
+/* Resume CSS */
+.resume {
+    width: 60%;
+    /* background-color: #331D2C; */
+    display: block;
+    margin: auto;
+    padding: 50px 50px;
+    height: 450px;
+    margin-top: 200px;
+    margin-bottom: 340px; 
+    background-color: #a99176;
+}
+.resume h1 {
+    font-size: 50px;
+    font-family: "Signika Negative" ;
+    /* text-align: center; */
+    /* margin-top: 15px; */
+    padding-bottom: 0px;
+    margin: 0px;
+}
+.resumesection{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    padding-left: 40px;
+}
+.resumesection .smallimg {
+    width: 250px;
+    transition: 1s;
+}
+
+.resumesection .Xicon{
+    position: absolute;
+    width: 3%;
+    left: 72%;
+    top: 402%;
+    transition: 1s;
+    display: none;
+}
+.resumesection .Xicon:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px 1px white; 
+}
+.resumesection .Xicon.show{
+    display: block;
+}
+
+
+.resumesection .bigimage{
+    width: 70px;
+    transition: 1s;
+    position: absolute;
+    left: 500px;
+    display:none ;
+}
+.resumesection .bigimage.show{
+    width: 51%;
+    transition: 1s;
+    position: absolute;
+    left: 25%;
+    top: 400%;
+    display:block ;
+    box-shadow: 1px 1px 50px 12px #56344b ;
+}
+.resumesection .smallimg:hover {
+    transform: scale(1.1);
+    /* border: #3F2E3E 2px solid; */
+    box-shadow: 100px #331D2C;
+    cursor: pointer;
+
+}
+
+.resumesection button {
+    padding: 15px 70px;
+    width: 300px;
+    font-size: 15px;
+    background-color: #3F2E3E;
+    margin-top: 50px;
+    transition: 0.5s;
+    border-radius: 10px;
+    color: #a99176;
+}
+.resumesection button:hover {
+    padding: 15px 70px;
+    /* transform: scale(1.1); */
+    width: 350px;
+    color: #ffffff;
+    margin-top: 50px;
+    cursor: pointer;
+    border-color: #a99176;
+}
+
+/* Contact me section */
+.contact {
+    width: 60%;
+    /* background-color: #331D2C; */
+    display: block;
+    margin: auto;
+    padding: 50px 50px;
+    height: 100%;
+    margin-top: 200px;
+    margin-bottom: 270px; 
+    background-color: #a99176;
+}
+.contact h1 {
+    font-size: 50px;
+    font-family: "Signika Negative" ;
+    /* text-align: center; */
+    /* margin-top: 15px; */
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.logocontainer{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+    font-family: 'Inter';
+    margin-top: 0px;
+    gap: 20px;
+    font-family: 'Epilogue';
+}
+
+.logocontainer a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+
+}
+.logocontainer a:hover{
+    text-decoration: none;
+    color: rgb(38, 37, 37);
+    transform: scale(1.1);
+}
+
+.logo {
+    width: 30px;
+    /* margin-top: 40px; */
+}
+
+.contactcontainer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.color {
+    background-color: #a99176;
+    height: 2000px;
+}
+
+.footer {
+    /* width: 100%;     */
+    padding: 50px 70px;
+    height: 150px;
+    background-color: #a99176;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    
+    /* align-items: center; */
+    /* gap: 3%; */
+    /* margin: auto; */
+    /* margin-top: 80px; */
+    /* padding-right: 100px; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    
+}
+
+.footer h4{
+    font-family: 'Roboto Mono', sans-serif;
+}
+.logo2 {
+    display: flex;
+    gap: 20px;
+    /* margin-left: 20px; */
+}
+
+.footer img {
+    width: 50px;
+    transition: 0.4s;
+
+}
+.footer img:hover {
+    transform: scale(1.1);
+}
+
+.letsconnect{
+    /* margin-left: 30px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+
+
+.reach{
+    display: block;
+    margin-right: 500px;
+    padding-right: 50px;
+}
+.navigation{
+    font-weight: 300;
+    font-family: 'Roboto mono';
+    width: 200px;
+    /* gap: 1%; */
+    /* margin-left: 50px; */
+}
+
+.navigation form{
+    font-family: 'Epilogue', monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+.formcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Epilogue';
+}
+
+.formcontainer input{
+    border-radius: 10px;
+    margin-left: 10px;
+    padding: 2px 10px ;
+    background-color: aliceblue;
+}
+.navigation a{
+    transition: 1s;
+    text-decoration: none;
+    color: #331D2C;
+}
+.navigation a:hover{
+    text-decoration: none;
+    color: #844c72;
+}
+
+
+.submit button{
+    border-radius: 20px;
+    padding: 6px 10px;
+    transition: 1s;
+}
+.submit button:hover{
+    border-radius: 20px;
+    padding: 6px 10px;
+    cursor: pointer;
+    background-color: #3F2E3E;
+    color: #a99176;
+}
+
+
+@media screen and  (max-width:768px) {
+    .desktopmenu{
+        display: none;
+        background-color: #a99176;
+        flex-direction: column;
+        position: absolute;
+        top: 63px;
+        padding: 40px;
+        align-items: center;
+        right: 25px;
+    }
+    .desktopmenu.show {
+        display: flex;
+    }
+
+    .icon{
+        display: block;
+    }
+    
+    nav h2{
+        font-size: 15px;
+        padding: 0px;
+    }
+
+    .name h1{
+        font-size: 20px;
+        margin-top: 130px;
+    }
+    .name button {
+        padding: 5px 10px;
+        font-size: 10px;
+        background-color: #a99176;
+        /* margin-top: 10px; */
+        transition: 0.5s;
+        border-radius: 10px;
+    }
+    .name button:hover {
+        padding: 5px 10px;
+        font-size: 10px;
+        background-color: #331D2C;
+        transition: 0.5s;
+        border-radius: 10px;
+    }
+
+
+   
+    .subName {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about {
+        width: 80%;
+        background-color: #331D2C;
+        display: block;
+        margin: auto;
+        padding: 10px 10px;
+        height: 100%;
+        margin-top: 210px;
+        margin-bottom: 180px; 
+        background-color: #a99176;
+    }
+    .about h1 {
+        font-size: 30px;
+        font-family: "Signika Negative" ;
+        /* text-align: center; */
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+    .about p {
+        font-size: 14px;
+        font-family: "Signika Negative", serif ;
+        /* text-align: center; */
+        justify-content: center;
+        margin-top: 30px;
+        line-height: 20px;
+        margin-right: 20px;
+        /* font-family: "Inter", serif; */
+    }
+    
+    .about .flex{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding-bottom: 0px;
+    }
+
+    .about .flex img {
+        margin-top: 20px;
+        height: 200px;
+        width: 200px;
+    }
+    .skills {
+        width: 80%;
+        background-color: #331D2C;
+        display: block;
+        margin: auto;
+        padding: 10px 10px;
+        height: 100%;
+        margin-top: 80px;
+        margin-bottom: 340px; 
+        background-color: #a99176;
+        /* text-align: center; */
+    }
+    .skills h1 {
+        font-size: 30px;
+        font-family: "Signika Negative" ;
+        /* text-align: center; */
+        margin-top: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    .skilllogo {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        width: 90%;
+        padding-left: 0px;
+        padding-right: 10px;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .skills .skilllogo img{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    .skills h3 {
+        font-size: 10px;
+    }
+    
+    .logo{
+        align-items: center;
+        margin-left: 0px;
+        padding-left: 0px;
+        justify-content: center;
+        text-align: center;
+        /* width: ; */
+        
+    }
+
+    .logo h3 {
+        width: 200%;
+    }
+    
+    .resume {
+        width: 60%;
+        /* background-color: #331D2C; */
+        display: block;
+        margin: auto;
+        padding: 50px 50px;
+        height: 100%;
+        margin-top: 80px;
+        margin-bottom: 340px; 
+        background-color: #a99176;
+    }
+
+    .resume h1 {
+        font-size: 30px;
+        font-family: "Signika Negative" ;
+        /* text-align: center; */
+        /* margin-top: 15px; */
+        padding-bottom: 0px;
+        margin: 0px;
+    }
+
+    .resumesection{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        padding-left: 0px;
+    }
+    .resumesection .smallimg {
+        width: 100%;
+        transition: 1s;
+    }
+    
+    .resumesection .Xicon{
+        position: absolute;
+        width: 3%;
+        left: 72%;
+        top: 402%;
+        transition: 1s;
+        display: none;
+    }
+    .resumesection .Xicon:hover{
+        transform: scale(1);
+        box-shadow: 1px 1px 10px 1px white; 
+    }
+    .resumesection .Xicon.show{
+        display: block;
+    }
+    
+    
+    .resumesection .bigimage{
+        width: 70px;
+        transition: 1s;
+        position: absolute;
+        left: 500px;
+        display:none ;
+    }
+    .resumesection .bigimage.show{
+        width: 51%;
+        transition: 1s;
+        position: absolute;
+        left: 25%;
+        top: 400%;
+        display:block ;
+        box-shadow: 1px 1px 50px 12px #56344b ;
+    }
+    
+    .resumesection button {
+        width: 100%;
+        padding: 5px 0px;
+        font-size: 15px;
+        background-color: #3F2E3E;
+        margin-top: 50px;
+        transition: 0.5s;
+        border-radius: 10px;
+        color: #a99176;
+        margin-top: 20px;
+    }
+    .resumesection button:hover {
+        width: 100%;
+        padding: 5px 0px;
+        font-size: 19px;
+        background-color: #3F2E3E;
+        margin-top: 50px;
+        transition: 0.5s;
+        border-radius: 10px;
+        color: #a99176;
+        margin-top: 20px;
+    }
+
+    
+    /* Contact me section */
+    
+
+    .contact {
+        width: 80%;
+        /* background-color: #331D2C; */
+        display: block;
+        margin: auto;
+        padding: 10px 10px;
+        height: 100%;
+        margin-top: 40px;
+        margin-bottom: 340px; 
+        background-color: #a99176;
+    }
+    .contact h1 {
+        font-size: 30px;
+        font-family: "Signika Negative" ;
+        /* text-align: center; */
+        /* margin-top: 15px; */
+        padding-bottom: 0px;
+        margin: 0px;
+    }
+    
+    .logocontainer{
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        font-family: 'Inter';
+        margin-top: 0px;
+        gap: 10px;
+    }
+
+    .logocontainer h4 {
+        font-size: 10px;
+    }
+    
+    .logocontainer a{
+        text-decoration: none;
+        color: black;
+        transition: 0.5s;
+    
+    }
+    .logocontainer a:hover{
+        text-decoration: none;
+        color: rgb(38, 37, 37);
+        transform: scale(1.1);
+    }
+    
+    .logo {
+        width: 15px;
+        /* margin-top: 40px; */
+    }
+    
+    .contactcontainer{
+        /* margin-top: 40px; */
+    }
+
+    /* Footer */
+
+    .footer {
+        /* width: 200%; */
+        margin: 0px;
+        padding: 0px;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 20px 20px;
+        padding-right: 6px;
+    }
+    
+    .footer h4{
+        font-family: 'Roboto Mono', sans-serif;
+        font-size: 10px;
+
+    }
+    .logo2 {
+        display: flex;
+        gap: 6px;
+        /* margin-left: 20px; */
+    }
+    
+    .footer img {
+        width: 20px;
+        transition: 0.4s;
+    
+    }
+    .footer img:hover {
+        transform: scale(1.1);
+    }
+    
+    .letsconnect{
+        /* margin-left: 30px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+    
+    
+    
+    .reach{
+        /* display: block; */
+        /* margin-right: 500px; */
+        /* padding-right: 50px; */
+    }
+    .reach h4{
+        margin: 0px;
+    }
+
+    .navigation{
+        font-weight: 300;
+        font-family: 'Roboto mono';
+        width: 70px;
+        /* gap: 1%; */
+        /* margin-left: 50px; */
+    }
+    
+    .navigation form{
+        font-family: 'Epilogue', monospace;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .formcontainer{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        /* font-family: 'Epilogue'; */
+        /* font-size: 10px; */
+    }
+    
+    .formcontainer input{
+        /* border-radius: 10px; */
+        width: 70px;
+        margin: 0px;
+        /* margin-left: 10px; */
+        /* padding: 2px 1px ; */
+        background-color: aliceblue;
+    }
+
+    .formcontainer label{
+        font-size: 10px;
+    }
+    .navigation a{
+        transition: 1s;
+        text-decoration: none;
+        color: #331D2C;
+    }
+    .navigation a:hover{
+        text-decoration: none;
+        color: #844c72;
+    }
+    
+
+    .submit button{
+        border-radius: 20px;
+        padding: 5px 9px;
+        transition: 1s;
+        width: 60px;
+        font-size: 8px;
+        margin-top: 10px;
+    }
+
+    .submit button:hover{
+        border-radius: 20px;
+        padding: 6px 10px;
+        cursor: pointer;
+        background-color: #3F2E3E;
+        color: #a99176;
+    }
+
+}
+    

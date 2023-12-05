@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Epilogue:wght@200;400;500&display=swap');
+
+body {
+    background-color: black;
+    font-family: 'Epilogue', sans-serif;
+    padding-top: 40px;
+    /* font-family: 'Baskervville', serif; */
+}
+
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 300px;
+}
+
+button{
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+    margin: 3px;
+    font-family: 'Epilogue', sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: azure;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: rgb(211, 222, 222);
+
+}
+
+.input{
+    width: 320px;
+    height: 60px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 0px 20px;
+    font-size: 30px;
+    background-color: rgb(26, 26, 26);
+    border: 1px gray solid;
+    color: aliceblue;
+}
+
+.clear {
+    width: 320px;
+    background-color: darkgoldenrod;
+}
+
+.opt{
+    background-color: rgb(186, 94, 28);
+    color: aliceblue;
+}
+
+.opt:hover{
+    background-color: rgb(202, 119, 61);
+    color: black;
+}
